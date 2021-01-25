@@ -266,10 +266,8 @@ footer {
     }
 
     section.image {
-        width: 100vw;
+        width: fit-content;
+        height: fit-content;
     }
 
-    section.image img {
-        width: 100%;
-    }
 }
