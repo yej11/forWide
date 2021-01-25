@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            background-color: 
+            #fffaf4;
+            
+        }
+        .content{
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .sub-content{
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .title{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 50px;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            height: 50px;
+        }
+        li{
+           list-style-type: none;
+           text-align: center;
+           font-size: 13px;
+           font-weight: bold;
+           }
+       a{text-decoration: none; color: black;}
+
+       ul.myMenu > li{
+           float: left;
+           width: 100px;
+           padding-left: 20px;
+           position: relative;
+           font-family: sans-serif;         
+       }
+       ul.myMenu >li:nth-child(1){
+           padding-left: 130px;
+       }
+
+       ul.submenu{
+           display: none;
+           position: absolute;
+           top: 13px; right: 0;
+       }
+       ul.submenu > li:nth-child(1){
+           padding-top: 40px;
+       }
+
+       ul.submenu > li{
+           width: 100px;
+           padding: 10px 0;
+           background: #fffaf471;
+           margin: 1px 0;
+           font-family: sans-serif;
+       }
+
+        ul.myMenu > li > a:hover{
+            color: #dddddd;
+        }
+
+        ul.submenu > li > a:hover{
+            color: #dddddd;
+        }
+        #checkbox{display: none;}
+        #checkbox + nav{ display: block;}
+        label{display: none;}
+        .top > div{
+            width: 150px; height: 25px;
+            background: rgba(255, 228, 196, 0.548);
+            text-align: center;
+            font-family: sans-serif;
+            line-height: 25px;
+            float: left;
+            margin: 0 10px;
+            margin-top: 3px;
+            padding: 10px 0;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        .top > div:nth-child(1){
+            margin-left: 230px;
+        }
+        .bottom > div{
+            width: 130px; 
+            text-align: center;
+            font-family: sans-serif;
+            float: left;
+            margin: 5px 10px;
+            padding: 8px 10px;
+            border-radius: 20px;
+            background: rgba(255, 228, 196, 0.548);
+            font-size: 12px;
+        }
+        .bottom > div:nth-child(1){
+            margin-left: 230px;
+        }
+        .bottom p{
+            padding: 5px 0;
+        }
+        .header{
+               text-align: center;
+               padding-top: 50px;
+               padding-bottom: 30px;
+               font-weight: bold;
+               font-size: 15px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="member.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.attendance').click(function () {
+                alert('준비중입니다.');
+            });
+            
+            $('.activity').hover(function () {
+                $('.submenu').slideDown('fast');
+            }, function (){
+                $('.submenu').slideUp('fast');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1 class="title"><a href="koreaW.html">ASEZ WIDE</a> </h1>
+    </div>
+    <div>
+            <label for="checkbox">menu</label>
+    </div>
+    <input id="checkbox" checked="checked" type="checkbox">
+       <nav class="container">
+        <ul class="myMenu">
+            <li class="about"><a href="about.html">ABOUT US</a> </li>
+            
+            <li class="activity"><a href="activity.html"> ACTIVITY</a>
+                <ul class="submenu">
+                        <li><a href="activity.html">전체</a></li>
+                        <li><a href="seminar.html">학문</a></li>
+                        <li><a href="friendship.html">친목</a></li>
+                        <li><a href="volunteer.html">봉사</a></li>
+                    </ul>
+            </li>
+            <li class="attendance"><a href="#">ATTENDANCE</a> </li>
+            <li class="contact"><a href="contact.html">CONTACT</a> </li>
+            <li><a href="photo.html">PHOTO</a> </li>
+            <li class="member"><a href="member.html">MEMBER</a> </li>
+        </ul>
+    </nav>
+    <div class="sub-content">
+        <p class="header">MEMBER</p>
+        <div class="top">
+            <div>문화부</div>
+            <div>홍보부</div>
+            <div>행정부</div>
+        </div>
+        <div class="bottom">
+            <div>
+                <p>담당자: 정혜원</p>
+                <p>부장: 송은아</p>
+                <p>차장: 박시온</p>
+            </div>
+            <div>
+                <p>담당자: 김현동</p>
+                <p>부장: 김예지</p>
+                <p>차장: 오은채</p>
+            </div>
+            <div>
+                <p>담당자: 황수빈</p>
+                <p>부장: 이은영</p>
+                <p>차장: 조아현</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div> 
+                <p>행사 간식 준비</p>
+                <p>꾸미기</p>
+                <p>만들기</p>
+            </div>
+            <div>
+                <p>홍보지 제작</p>
+                <p>PPT 제작</p>
+                <p>아이디어 BANK</p>
+            </div>
+            <div>
+                <p>출석부 체크</p>
+                <p>장소대여</p>
+                <p>서류작성</p>
+                <p>동아리 관련 자료수집</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
