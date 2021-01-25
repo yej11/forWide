@@ -108,7 +108,6 @@ ul.submenu {
 
 section.image {
     display: flex;
-    width: 100vw;
 }
 
 section.image img {
@@ -264,5 +263,9 @@ footer {
 
     #qna {
         margin-top: 10px;
+    }
+
+    section.image {
+        width: 100vw;
     }
 }

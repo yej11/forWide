@@ -62,13 +62,6 @@ ul {
 }
 
 @media (max-width: 767px) {
-    .content {
-        padding: 20px;
-    }
-
-    .title {
-        margin: 15px;
-    }
 
     .title a{
         font-size: var(--max);
