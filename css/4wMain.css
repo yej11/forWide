@@ -40,7 +40,6 @@ ul {
     justify-content: center;
     font-family: 'Merriweather', Times, serif;
     font-size: 60px;
-    text-align: center;
 }
 
 .internal ul{
@@ -73,11 +72,11 @@ ul {
     }
 
     .content h1 {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .internal li a {
-        font-size: 9px;
+        font-size: 6px;
         padding: 10px;
     }
 }
