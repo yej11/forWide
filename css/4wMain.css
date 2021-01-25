@@ -70,11 +70,12 @@ ul {
         margin: 15px;
     }
 
-    .title a{
-        font-size: var(--max);
+    .content h1 {
+        font-size: 28px;
     }
 
     .internal li a {
-        font-size: 9px;
+        font-size: 5px;
+        padding: 10px;
     }
 }

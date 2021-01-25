@@ -265,7 +265,7 @@ footer {
         margin-top: 10px;
     }
 
-    section.image {
-        width: 100vw;
+    section.image img{
+        width: 100%;
     }
 }
