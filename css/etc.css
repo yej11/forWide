@@ -208,6 +208,23 @@ section.describe ul#list li p {
 
 @media screen and (max-width: 550px) {
 
+	/*seminar*/
+	section.describe {
+		margin: 0;
+	}
+
+	div.sub-title {
+		margin: 30px;
+		font-size: 9px;
+	}
+	section.describe ul#list li{
+		width: 100%;
+	}
+
+	section.describe ul#list li p {
+		font-size: 12px;
+	}
+
 	/* about */
 	
 	.content-about {
@@ -233,22 +250,5 @@ section.describe ul#list li p {
 		align-items: center;
 		justify-content: center;
 		margin: 100px 0;
-	}
-
-	/*seminar*/
-	section.describe {
-		margin: 0;
-	}
-
-	div.sub-title {
-		margin: 30px;
-		font-size: 9px;
-	}
-	section.describe ul#list li{
-		width: 100%;
-	}
-
-	section.describe ul#list li p {
-		font-size: 12px;
 	}
 }
