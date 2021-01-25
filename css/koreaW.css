@@ -265,9 +265,8 @@ footer {
         margin-top: 10px;
     }
 
-    section.image {
-        width: fit-content;
-        height: fit-content;
+    .image img {
+        width: 100%;
     }
 
 }
