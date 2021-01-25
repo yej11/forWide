@@ -11,8 +11,7 @@
 }
 
 *{
-	padding: 0; margin: 0; 
-	font-family: 'Archivo';
+	padding: 0; margin: 0;
 }
 
 /* about */
@@ -113,9 +112,9 @@
 
 .media-all a {
 	margin: 15px 0;
-	padding: 10px 20px;
+	padding: 10px;
 	font-size: var(--mid);
-	border: 1px solid var(--black);
+	border-bottom: 2px solid var(--black);
 	font-weight: bolder;
 }
 
