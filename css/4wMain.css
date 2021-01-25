@@ -38,7 +38,7 @@ ul {
 .content h1 {
     display: flex;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Merriweather', Times, serif;
     font-size: 60px;
 }
 
@@ -68,10 +68,11 @@ ul {
 
     .title {
         margin: 15px;
+        margin-bottom: 50px;
     }
 
     .content h1 {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .internal li a {
