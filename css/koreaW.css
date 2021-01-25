@@ -106,11 +106,7 @@ ul.submenu {
     margin-top: 13px;
 }
 
-section.image {
-    display: flex;
-}
-
-section.image img {
+.image img {
     width: 100vw;
 }
 
@@ -264,9 +260,4 @@ footer {
     #qna {
         margin-top: 10px;
     }
-
-    .image img {
-        width: 100%;
-    }
-
 }
