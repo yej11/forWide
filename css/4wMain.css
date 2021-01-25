@@ -4,7 +4,7 @@
     --grey: #6d6d6d;
 
     --mid: 12px;
-    --max: 40px;
+    --max: 35px;
 }
 body{
     /* background-image: url('4w2-3.jpg'); */
@@ -65,5 +65,9 @@ ul {
 @media (max-width: 767px) {
     .title a{
         font-size: var(--max);
+    }
+
+    .internal li a {
+        font-size: 9px;
     }
 }
