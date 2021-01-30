@@ -3,6 +3,7 @@
     --white:#fffaf4;
     --grey: #6d6d6d;
     --point: #154182;
+    --shadow: #b9b9b9c5;
 
     --mid: 12px;
     --max: 18px;
@@ -203,10 +204,10 @@ footer {
 
     footer #back-top {
         bottom: 20px;
+        right: 22px;
         background-color: rgba(255, 255, 255, 0.527);
         padding: 7px 8px;
         border-radius: 50%;
-        right: 22px;
     }
     
     .login-btn {
@@ -229,13 +230,34 @@ footer {
     }
 
     .myMenu{
-        flex-direction: column;
-        display: none;
+        display: block;
+        width: 300px;
+        height: 100%;
+        background-color: rgb(255, 253, 251);
+        position: fixed;
+        top: 0;
+        left: -300px;
+        z-index: 1;
+        transition: all .35s;
+    }
+    
+    .myMenu.active {
+        left: 0;
+        box-shadow: var(--shadow) 1px 0 10px;
+    }
+
+    .myMenu.active #toggle {
+        position: fixed;
+    }
+
+    #toggle {
+        z-index: 9999;
     }
 
     .myMenu ul {
-        display: flex;
-        flex-direction: column;
+        position: relative;
+        top: 90px;
+        font-size: 13px;
     }
 
     .myMenu li a {
@@ -243,13 +265,17 @@ footer {
     }
 
     .myMenu li {
-        margin: 10px 20px;
+        padding-left: 30px;
+        display: flex;
+        margin: 0;
         text-align: center;
+        width: 100%;
+        align-items: center;
+        height: 50px;
+        border-bottom: 0.5px solid var(--shadow);
     }
 
-    .myMenu.active {
-        display: flex;
-    }
+    
 
     ul.submenu{
         display: none;
