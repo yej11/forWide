@@ -187,7 +187,7 @@ footer {
     bottom: 60px;
     right: 50px;
     opacity: 0;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
   }
   
   footer #back-top i:hover {
