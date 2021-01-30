@@ -1,6 +1,6 @@
 :root {
 	--black: #333;
-	--white: #fffff7;
+	--white: #fffaf4;
 	--grey: #6d6d6d;
 	--point: #154182;
 
@@ -10,7 +10,9 @@
 	--footer: 10px;
 }
 
-*{padding: 0; margin: 0;}
+*{
+	padding: 0; margin: 0;
+}
 
 /* about */
 
@@ -110,9 +112,9 @@
 
 .media-all a {
 	margin: 15px 0;
-	padding: 10px 20px;
+	padding: 10px;
 	font-size: var(--mid);
-	border: 1px solid var(--black);
+	border-bottom: 2px solid var(--black);
 	font-weight: bolder;
 }
 
@@ -168,19 +170,20 @@
 
 section.describe
 {
-    display: block;
-    margin: 30px 50px;
+		margin: 30px 100px;
 }
 section.describe ul#list {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
     flex-wrap: wrap;
     text-align: left;
+		width: 100%;
+		margin: 0 auto;
 }
 
 section.describe ul#list li {
-    width: 30%;
+    width: 40%;
     margin: 0 20px;
     margin-bottom: 70px;
 }
@@ -197,10 +200,17 @@ section.describe ul#list li p {
 }
 
 .sub-title {
-    display: flex;
+		display: flex;
+		flex-direction: column;
     justify-content: center;
-    margin: 50px 0;
-    font-size: 10px;
+    margin: 80px 0 70px 0;
+		font-size: 10px;
+		text-align: center;
+}
+
+.sub-title h3 {
+	margin-top: 20px;
+	color: var(--grey);
 }
 
 
@@ -208,10 +218,28 @@ section.describe ul#list li p {
 
 @media screen and (max-width: 550px) {
 
+	/*seminar*/
+	section.describe {
+		margin: 0;
+	}
+
+	div.sub-title {
+		margin: 70px 30px 50px 30px;
+		font-size: 9px;
+	}
+	section.describe ul#list li{
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	section.describe ul#list li p {
+		font-size: 12px;
+	}
+
 	/* about */
 	
 	.content-about {
-		margin: 20px 10px 70px 10px;
+		margin: 70px 10px 70px 10px;
 		padding: 10px;
 	}
 
