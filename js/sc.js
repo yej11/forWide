@@ -17,7 +17,6 @@ let btn = document.querySelector('#back-top'),
 			window.addEventListener('scroll', () => {
 				//윈도우에 스크롤이 생기면 할일
 				scrollPos = docElement.scrollTop; //실시간으로 스크롤 양 찍힘
-				console.log(scrollPos);
 
 				//스크롤 양이 offset보다 많으면 클래스 이름을 visible로 변경
 				btn.className = (scrollPos > offset) ? 'visible' : '';
