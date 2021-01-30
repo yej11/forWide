@@ -213,7 +213,9 @@ section.describe ul#list li p {
 	color: var(--grey);
 }
 
-
+div.sub-title h1 a i{
+	display: none;
+}
 
 
 @media screen and (max-width: 550px) {
@@ -224,12 +226,20 @@ section.describe ul#list li p {
 	}
 
 	div.sub-title {
-		margin: 50px 30px 50px 30px;
+		margin: 50px 30px 20px 30px;
 		font-size: 9px;
 	}
 
 	div.sub-title h1 {
+		position: relative;
+		text-align: center;
 		margin-top: 20px;
+	}
+
+	div.sub-title h1 a i {
+		display: block;
+		position: absolute;
+		left: 0;
 	}
 
 	section.describe ul#list li{
