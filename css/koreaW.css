@@ -127,13 +127,13 @@ ul.submenu {
 }
 
 /*login*/
-.login-container, .join-container {
+.login-container {
 	display: flex;
     justify-content: center;
     margin: 60px;
 }
 
-.login-container form, .join-container form{
+.login-container form{
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -159,10 +159,6 @@ ul.submenu {
     justify-content: center;
 }
 
-.join-container form input[type=submit] {
-    margin-top: 10px;
-}
-
 .join-btn {
     margin: 10px 0;
     font-size: var(--mid);
@@ -176,23 +172,6 @@ div.login-sub-title {
 
 div.login-sub-title i{
     display: none;
-}
-
-/*join*/
-.join-container form label {
-    font-size: var(--mid);
-}
-
-.join-container form input {
-    width: 100%;
-    padding: 5px 0;
-    margin: 5px 0;
-    border: none;
-    border-bottom: 1px solid var(--grey);
-    line-height: 20px;
-    font-size: var(--min);
-    outline: none;
-    background-color: var(--white);
 }
 
 /*footer*/
