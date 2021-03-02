@@ -41,14 +41,14 @@ let btn = document.querySelector('#back-top'),
 					} else {
 						clearInterval(scrollInterval); //스크롤이 0이면 setInterval 멈춰야됨
 					}
-				}, 15); //0.0015s = 15ms
+				},7); //0.0015s = 15ms
 			});
 
 
 //toggle-button
 const toggle = document.querySelector('#toggle');
 const menu = document.querySelector('.myMenu');
-
+const body = document.querySelector('.main');
 toggle.addEventListener('click', () => {
 		menu.classList.toggle('active');
 });
