@@ -5,6 +5,7 @@
     --point: #154182;
     --shadow: #b9b9b9c5;
 
+    --min: 10px;
     --mid: 12px;
     --max: 18px;
     --title: 42px;
@@ -118,6 +119,64 @@ ul.submenu {
     margin: 30px 30px 0 0;
 }
 
+/*login*/
+.login-container, .join-container {
+	display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.login-container form, .join-container form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.login-container form input{
+    padding: 5px;
+    margin: 9px 0;
+    border: none;
+    border-bottom: 1px solid var(--grey);
+    line-height: 20px;
+    font-size: var(--min);
+    outline: none;
+    background-color: var(--white);
+}
+
+.login-container form input[type=submit], .join-container form input[type=submit] {
+    cursor: pointer;
+    border: 1px solid var(--grey);
+    font-size: var(--mid);
+    padding: 10px 0;
+    margin-top: 20px;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+.join-btn {
+    margin: 10px 0;
+    font-size: var(--mid);
+    outline: none;
+    text-align: right;
+}
+
+
+/*join*/
+.join-container form label {
+    font-size: var(--mid);
+}
+
+.join-container form input {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid var(--grey);
+    line-height: 20px;
+    font-size: var(--min);
+    outline: none;
+    background-color: var(--white);
+}
 
 /*footer*/
 
