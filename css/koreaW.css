@@ -63,6 +63,10 @@ input[id="menuicon"]{
     display: none;
 }
 
+input[id="acc"]{
+    display: none;
+}
+
 .menubtn {
     display: none;
 }
@@ -325,7 +329,6 @@ opacity: 1;
         opacity: 0; visibility: hidden;
         z-index: 1;
     }
-
     input[id="menuicon"]:checked ~ .background {opacity: 1; visibility: visible;}
 
     .login-btn {
