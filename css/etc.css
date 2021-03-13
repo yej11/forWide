@@ -1,12 +1,15 @@
 :root {
 	--black: #333;
-	--white: #fffaf4;
+	--white:#fffcf8;
 	--grey: #6d6d6d;
 	--point: #154182;
+	--shadow: #b9b9b9c5;
 
+	--min: 10px;
 	--mid: 12px;
-	--max: 18px;
-	--title: 42px;
+	--max: 14px;
+	--super: 20px;
+	--title: 30px;
 	--footer: 10px;
 }
 
@@ -22,7 +25,7 @@ input, textarea, button {
 /* about */
 
 .content-about {
-	margin: 50px;
+	margin-top: 120px;
 	padding: 30px;
 	border: 1px solid black;
 	display: flex;
@@ -61,138 +64,13 @@ input, textarea, button {
 	margin: 20px 0;
 }
 
-/* all */
-
-
-.slide-wrapper {
-	position: relative;
-	/* 담고싶은 (사진의 길이+ 마진) * 갯수 */
-	width: 500px;
-	margin: 0 auto;
-	/* 사진의 높이만큼 */
-	height: 333.57px;
-	overflow: hidden;
-	margin-top: 70px;
-}
-
-.slides {
-	position: absolute;
-	top: 0; left: 0;
-	transition: left 0.5s ease-out;
-}
-
-.slides img {
-	width: 500px;
-}
-
-.slides li {
-	float: left;
-	position: relative;
-}
-
-.slides li span {
-	position: absolute;
-	top: 30px;
-	font-size: 16px;
-	color: #fff;
-	width: 100%;
-	text-align: center;
-	text-shadow: 1px 1px 8px #000;
-}
-
-.control {
-	text-align: center;
-}
-
-.control .prev {
-	position: relative;
-	top: -170px;
-	left: -270px;
-}
-.control .next {
-	position: relative;
-	top: -170px;
-	right: -270px;
-}
-
-.control button i {
-	font-size: 23px;
-}
-
-.control button i:hover {
-	color: var(--grey);
-}
-
-.control button:focus {
-	outline: 0;
-}
-
-.media-all {
-	display: none;
-}
-
-.media-all a {
-	margin: 15px 0;
-	padding: 10px;
-	font-size: var(--mid);
-	border-bottom: 2px solid var(--black);
-	font-weight: bolder;
-}
-
-
-/* photo */
-
-.container h1 {
-  text-align: center;
-  margin: 20px 0;
-}
-
-
-.container {
-	max-width: 800px;
-	margin: 0 auto;
-	width: 100%;
-	line-height: 28px;
-}
-
-.container a {
-	border-bottom: 2px dashed firebrick;
-	position: relative;
-}
-/* 
-/* a의 앞에다가 */
-.container a:before {
-	content: '';
-	position: absolute;
-	top:50%;
-	left: 50%;
-	width: 100%;
-	height: 100%;
-	min-height: 30px;
-	transform: translate(-50%, -50%) scaleX(0); /*센터에 오도록*/
-	padding: 10px;
-	z-index: -1; /*글씨 밑에 깔리도록*/
-	transform-origin: 50% 50%; /*가운데서부터 커지도록*/
-	background: white;
-	transition: all 0.3 ease-out;
-} */
-
-.bg {
-	position: absolute;
-	left: 0; right: 0; top: 0; bottom: 0;
-	opacity: 0;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	transition: all 0.3 ease-out;
-}
-
 /*seminar*/
 
 section.describe
 {
-		margin: 30px 100px;
+		margin: 30px 0;
 }
+
 section.describe ul#list {
 		display: flex;
 		justify-content: space-around;
@@ -204,8 +82,8 @@ section.describe ul#list {
 }
 
 section.describe ul#list li {
-    width: 40%;
-    margin: 0 20px;
+    width: 45%;
+    margin: 0;
     margin-bottom: 70px;
 }
 
@@ -224,7 +102,7 @@ section.describe ul#list li p {
 		display: flex;
 		flex-direction: column;
     justify-content: center;
-    margin: 80px 0 70px 0;
+    margin: 120px 0 70px 0;
 		font-size: 10px;
 		text-align: center;
 }
