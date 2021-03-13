@@ -141,6 +141,11 @@ div.sub-title h1 a i{
 		left: 0;
 	}
 
+	section.describe{
+		width: 90vw;
+		margin: 0 auto;
+	}
+
 	section.describe ul#list li{
 		width: 100%;
 		margin-bottom: 20px;
