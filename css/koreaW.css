@@ -15,7 +15,7 @@
 
 
 input, textarea, button {
-	-webkit-appearance: none;-
+	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 }
 
@@ -349,8 +349,12 @@ opacity: 1;
         width: unset;
     }
 
+    .submenu li > a {
+        font-size: 12px;
+    }
+
     .myMenu > ul li {
-        margin: 20px 10px;
+        margin: 20px 30px;
         font-weight: lighter;
     }
 
@@ -413,7 +417,7 @@ opacity: 1;
         bottom: 20px;
         right: 22px;
         background-color: rgba(255, 255, 255, 0.527);
-        padding: 7px 8px;
+        padding: 4px 8px;
         border-radius: 50%;
     }
     footer {
